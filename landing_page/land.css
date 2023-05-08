@@ -1,0 +1,488 @@
+*{
+    margin:0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+    text-transform: capitalize;
+    text-decoration: none; 
+}
+
+/* navbar section=================================================*/
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(158, 158, 158);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logosearch {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(158, 158, 158);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgb(112, 112, 112);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+#logoimg {
+    width: 50%;
+    padding-top: 8px;
+    padding-bottom: 5px; 
+}
+
+#landsearch {
+    height: 30px;
+    width: 200px;
+    padding: 0px 10px;
+}
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+@media(max-width:1000px) {
+
+    /* .logo{
+        width:100%;
+    }
+    .logosearch{
+        width:100%;
+    } */
+    #logoimg {
+        width: 70%;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(158, 158, 158);
+        border-top: 1 px solid rgb(112, 112, 112);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+}
+
+
+
+/* navbar end=====================================================*/
+
+
+/* footer start===================================================*/
+
+#footer{
+    margin-top: 300px;
+    width:99.6%;
+    height:35vh; 
+    /* height: auto;  */
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    align-content: space-between;
+    background-color:#333; 
+}
+
+
+.foot1{
+    width: 33.3%;
+    height:100%;
+    margin:auto;
+    border:none;
+    padding-top:5%;
+    padding-bottom:5%;
+    background-color: rgb(91, 115, 136);
+    background-color: #333;
+}
+
+.foot-head {
+    font-family: montserrat, sans-serif;
+    letter-spacing: 2px;
+    /* color: rgb(51, 51, 51); */
+    color: #fdd835;
+    text-transform: uppercase;
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* font-family: "Mier bold"; */
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10%;
+}
+
+.foot-p{
+    /* color: rgb(102, 102, 102); */
+    color:white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Mier book";
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10%;
+    margin-top: 6%; 
+}
+
+.connect{
+    margin-top:6%;
+    width:65%;
+    margin-left: 10%;
+    display: flex;
+    align-content:space-around;
+}
+
+.store{
+    width:45%;
+    border:1px solid #ffffffa1;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.appstore{
+    margin-left: 10%;
+}
+
+.foot-table{
+    width:100%;
+    height: 100%;
+}
+
+
+.foot-table a{
+    /* color: rgb(102, 102, 102); */
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.foot-table th{
+    padding:2.4%;
+}
+
+.con{
+    display:flex;
+}
+
+.contact{
+    width:50%;
+    height:100%;
+    border:none;
+}
+
+.reach{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+
+.Symbol{
+    width:10%;
+    margin-right: 7%;
+    margin-top: 5%;
+}
+
+.ReacH{
+    width: 100%;
+    display:flex;
+    align-content: space-around;
+}
+
+.contact{
+    font-size: 12px;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+.contact h6{
+        color:#fdd835;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        font-family: "Mier bold";
+        margin: 0px;
+        padding: 0px;
+}
+
+/* footer end=========================================================*/
+
+/* entire middle body part=========================================== */
+
+#bodyy{
+    padding-top: 50px;
+    width:99.6%;
+    height:auto;
+    margin: auto;
+    border:none;
+}
+
+.set1{
+    width:80%;
+    margin: auto;
+    height:100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display:flex;
+    justify-content:space-between;
+    margin-top: 7vh;
+}
+
+.set1sub{
+    width:50%;
+}
+
+.topchoose{
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-top:10vh;
+}
+
+.set2{
+    margin-top: 4vh;
+}
+.set1sub2{
+    width:32%;
+}
+
+.set3{
+    width:80%;
+    margin: auto;
+    height:100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1.4%;
+    border:none;
+}
+
+.hot{
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top:8vh;
+    margin-bottom: 4vh;
+}
+
+.set4{
+    width:80%;
+    margin: auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    grid-gap: 1.4%;
+    border:none;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#search-container{
+    margin-top: 1.3%;
+}
+
+.product-box{
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image{
+    width:100%;
+    height:55%;
+}
+
+.content{
+    padding:10px;
+}
+
+.title{
+    font-size: 18px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.description,.price,.pro-id{
+    font-size: 16px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 8px;
+    color:rgb(82, 80, 80);
+}
+
+/* .description{
+    height:90px;
+} */
+
+.box-btn{
+    width:80%;
+    margin-bottom:10px;
+    padding: 5px 0px;
+    border:none;
+    background-color:#333;
+    color:#fdd835;
+}
+
+.box-btn:hover{
+    cursor: pointer;
+    background-color:rgb(107, 103, 103);
+}
+
+#pagination-wrapper{
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.pagination-btn{
+    padding:5px 20px;
+    font-size: 16px;
+    border:none;
+    background-color:#333;
+    color:#fdd835;
+    /* border-radius: 5px; */
+}
+
+.pagination-btn:hover{
+    background-color:rgb(107, 103, 103);
+    cursor: pointer;
+}
