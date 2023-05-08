@@ -4,7 +4,7 @@ function myFunction(x) {
 
 
 window.addEventListener("load",(event)=>{
-    let url="http://localhost:4040/land";
+    let url="https://dead-puce-frog-tutu.cyclic.app/land";
     getProductsFunction(url);
 })
 
@@ -107,7 +107,7 @@ function getAsBtn(text,dataId){
 let Query=document.querySelector("#landsearch");
 Query.addEventListener("search",(event)=>{
     event.preventDefault();
-    let url="http://localhost:4040/land";
+    let url="https://dead-puce-frog-tutu.cyclic.app/land";
     let q=Query.value;
     GetProductsFunction(url,q);
 })

@@ -12,7 +12,7 @@ register_btn.addEventListener("submit",(event)=>{
 
 let registerFunction=async(obj)=>{
     try {
-        let register_req=await fetch(`http://localhost:4040/admin/register`,{
+        let register_req=await fetch(`https://dead-puce-frog-tutu.cyclic.app/admin/register`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

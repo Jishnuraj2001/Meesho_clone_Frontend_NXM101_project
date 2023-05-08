@@ -13,7 +13,7 @@ men_add_btn.addEventListener("submit",(event)=>{
 })
 async function addMenProductFunction(obj){
     try {
-        let add_request=await fetch(`http://localhost:4040/men/create`,{
+        let add_request=await fetch(`https://dead-puce-frog-tutu.cyclic.app/men/create`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -49,7 +49,7 @@ women_add_btn.addEventListener("submit",(event)=>{
 })
 async function addWomenProductFunction(obj){
     try {
-        let add_request=await fetch(`http://localhost:4040/women/create`,{
+        let add_request=await fetch(`https://dead-puce-frog-tutu.cyclic.app/women/create`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -73,13 +73,13 @@ async function addWomenProductFunction(obj){
 
 let get_men_btn =document.querySelector("#get-men-btn");
 get_men_btn.addEventListener("click",(event)=>{
-    let url="http://localhost:4040/men";
+    let url="https://dead-puce-frog-tutu.cyclic.app/men";
     getProductsFunction(url);
 })
 
 let get_women_btn =document.querySelector("#get-women-btn");
 get_women_btn.addEventListener("click",(event)=>{
-    let url="http://localhost:4040/women";
+    let url="https://dead-puce-frog-tutu.cyclic.app/women";
     getProductsFunction(url);
 })
 

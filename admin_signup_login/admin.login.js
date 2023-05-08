@@ -13,7 +13,7 @@ login_btn.addEventListener("submit",(event)=>{
 
 let loginFunction=async(obj)=>{
     try {
-        let login_req=await fetch(`http://localhost:4040/admin/login`,{
+        let login_req=await fetch(`https://dead-puce-frog-tutu.cyclic.app/admin/login`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
